@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://qnlieuu0lljg"]
+
+[ext_resource type="Texture2D" uid="uid://d3wnpe3s6x3e2" path="res://Game assets/NPC's/CharacterSheet3.png" id="1_fkrtq"]
+
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_30gvy"]
+atlas = ExtResource("1_fkrtq")
+region = Rect2(320, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p5t06"]
+atlas = ExtResource("1_fkrtq")
+region = Rect2(384, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wg4lw"]
+atlas = ExtResource("1_fkrtq")
+region = Rect2(448, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uk5s7"]
+atlas = ExtResource("1_fkrtq")
+region = Rect2(512, 384, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t0fuu"]
+atlas = ExtResource("1_fkrtq")
+region = Rect2(576, 384, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_i38f0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_30gvy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p5t06")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wg4lw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uk5s7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t0fuu")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="WilliamTheMightyLion" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_i38f0")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.898716

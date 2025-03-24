@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://ckdsy0ffvu87j"]
+
+[ext_resource type="Texture2D" uid="uid://b6rp7gi7v0e8l" path="res://Game assets/NPC's/CharacterSheet1.png" id="1_m84cc"]
+
+
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewu10"]
+atlas = ExtResource("1_m84cc")
+region = Rect2(320, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6i0cc"]
+atlas = ExtResource("1_m84cc")
+region = Rect2(384, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3ksg"]
+atlas = ExtResource("1_m84cc")
+region = Rect2(448, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_had7i"]
+atlas = ExtResource("1_m84cc")
+region = Rect2(512, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5v547"]
+atlas = ExtResource("1_m84cc")
+region = Rect2(576, 576, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tc8jx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewu10")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6i0cc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3ksg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_had7i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5v547")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Resting singing solider" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_tc8jx")
+autoplay = "default"
+frame_progress = 0.419704

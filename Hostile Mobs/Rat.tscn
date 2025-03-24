@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0y31dunrf77o"]
+
+[ext_resource type="PackedScene" uid="uid://b0y31dunrf77o" path="res://Mobs Scripts & Scenes/Rat.tscn" id="1_r8txq"]
+
+
+[node name="CharacterBody2D" instance=ExtResource("1_r8txq")]
+
+[node name="CollisionShape2D" parent="." index="1"]
+visible = true
+position = Vector2(4, -6)

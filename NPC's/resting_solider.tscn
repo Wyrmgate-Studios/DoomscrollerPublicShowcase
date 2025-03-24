@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://3kiepqsh3q2k"]
+
+[ext_resource type="Texture2D" uid="uid://b6rp7gi7v0e8l" path="res://Game assets/NPC's/CharacterSheet1.png" id="1_1se0h"]
+
+
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0hug"]
+atlas = ExtResource("1_1se0h")
+region = Rect2(0, 512, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qqvfw"]
+atlas = ExtResource("1_1se0h")
+region = Rect2(64, 512, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jsnkh"]
+atlas = ExtResource("1_1se0h")
+region = Rect2(128, 512, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0d38d"]
+atlas = ExtResource("1_1se0h")
+region = Rect2(192, 512, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yhhpv"]
+atlas = ExtResource("1_1se0h")
+region = Rect2(256, 512, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c23v2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s0hug")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qqvfw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jsnkh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0d38d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yhhpv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Resting Solider" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_c23v2")
+autoplay = "default"
+frame_progress = 0.278916

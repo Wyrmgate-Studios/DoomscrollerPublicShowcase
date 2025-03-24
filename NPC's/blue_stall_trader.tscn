@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://ckna06f10f88t"]
+
+[ext_resource type="Texture2D" uid="uid://ia2h11uymsgy" path="res://Game assets/NPC's/GandalfHardcore characters pack/GandalfHardcore characters sheet 4.png" id="1_y4iqp"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t6gi1"]
+atlas = ExtResource("1_y4iqp")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1bi4"]
+atlas = ExtResource("1_y4iqp")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u6ufu"]
+atlas = ExtResource("1_y4iqp")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dcr0b"]
+atlas = ExtResource("1_y4iqp")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nt8wt"]
+atlas = ExtResource("1_y4iqp")
+region = Rect2(256, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_58ei4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t6gi1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1bi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u6ufu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dcr0b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nt8wt")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Blue Stall Trader" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2.38419e-07, 7.15256e-07)
+scale = Vector2(0.972656, 0.949219)
+sprite_frames = SubResource("SpriteFrames_58ei4")

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpqnlyo786fld"]
+
+[ext_resource type="PackedScene" uid="uid://bpqnlyo786fld" path="res://Mobs Scripts & Scenes/Mosquito.tscn" id="1_glg3r"]
+
+
+[node name="CharacterBody2D" instance=ExtResource("1_glg3r")]
+
+[node name="AnimatedSprite2D" parent="." index="1"]
+animation = &"idle"

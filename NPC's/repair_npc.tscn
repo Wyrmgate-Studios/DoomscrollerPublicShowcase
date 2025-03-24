@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://do8vsy8gtttef"]
+
+[ext_resource type="Texture2D" uid="uid://ia2h11uymsgy" path="res://Game assets/NPC's/GandalfHardcore characters pack/GandalfHardcore characters sheet 4.png" id="1_cd2wx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4xybm"]
+atlas = ExtResource("1_cd2wx")
+region = Rect2(0, 0, 64, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2drya"]
+atlas = ExtResource("1_cd2wx")
+region = Rect2(64, 0, 64, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xve21"]
+atlas = ExtResource("1_cd2wx")
+region = Rect2(128, 0, 64, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oi12k"]
+atlas = ExtResource("1_cd2wx")
+region = Rect2(192, 0, 64, 68)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_urc7x"]
+atlas = ExtResource("1_cd2wx")
+region = Rect2(256, 0, 64, 68)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1e2lb"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4xybm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2drya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xve21")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oi12k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_urc7x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Repair npc" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_1e2lb")
+autoplay = "default"
+frame_progress = 0.990386

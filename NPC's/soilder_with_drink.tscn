@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://qfytb034bk04"]
+
+[ext_resource type="Texture2D" uid="uid://be56vvgouyyxe" path="res://Game assets/NPC's/CharacterSheet2.png" id="1_u8ee6"]
+
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24h0n"]
+atlas = ExtResource("1_u8ee6")
+region = Rect2(0, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a2a1d"]
+atlas = ExtResource("1_u8ee6")
+region = Rect2(64, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g44rb"]
+atlas = ExtResource("1_u8ee6")
+region = Rect2(128, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_il87s"]
+atlas = ExtResource("1_u8ee6")
+region = Rect2(192, 576, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_njmvm"]
+atlas = ExtResource("1_u8ee6")
+region = Rect2(256, 576, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u2gaj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24h0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a2a1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g44rb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_il87s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_njmvm")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 6.0
+}]
+
+[node name="Soilder With Drink" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_u2gaj")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.512299

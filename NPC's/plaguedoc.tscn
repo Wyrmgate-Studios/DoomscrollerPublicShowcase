@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://kwcuht1g3ptl"]
+
+[ext_resource type="Texture2D" uid="uid://fbuiyosoihie" path="res://Game assets/NPC's/CharacterSheet4.png" id="1_a1l0s"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvdia"]
+atlas = ExtResource("1_a1l0s")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_horsc"]
+atlas = ExtResource("1_a1l0s")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ixar"]
+atlas = ExtResource("1_a1l0s")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rsphk"]
+atlas = ExtResource("1_a1l0s")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ua2if"]
+atlas = ExtResource("1_a1l0s")
+region = Rect2(576, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2vub3"]
+animations = [{
+"frames": [{
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_lvdia")
+}, {
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_horsc")
+}, {
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_1ixar")
+}, {
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_rsphk")
+}, {
+"duration": 1.8,
+"texture": SubResource("AtlasTexture_ua2if")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Plague Doctor" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-8, 2)
+scale = Vector2(0.796875, 0.9375)
+sprite_frames = SubResource("SpriteFrames_2vub3")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.0118942
