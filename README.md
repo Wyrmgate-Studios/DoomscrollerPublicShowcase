@@ -3,7 +3,9 @@
 
 # Doomscroller Public Showcase 
 
-Here, you can see what we're doing within Doomscroller and keep up-to-date with the latest progress! This project is updated every 7 days or so.
+Welcome to the official repository for Doomscroller, a fast-paced, action-packed game currently in development. This project is a public showcase of my journey in creating the game, where players navigate through an endless, ever-changing digital landscape while battling obstacles and foes. As the game evolves, you’ll find updates, source code, and all the latest features added to the experience.
+
+Feel free to explore the code, or just follow along as I build and refine the game. Contributions and feedback are always welcome!
 
 
 ## Getting started
